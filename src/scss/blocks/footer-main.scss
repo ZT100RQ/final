@@ -1,0 +1,44 @@
+.footer-main {
+  display: flex;
+  padding: 16px 16px;
+  background: $bgG;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  font-family: $fontR;
+  display: flex;
+  flex-direction: column;
+  color: $textG;
+  gap: 16px;
+  @media screen and (min-width: $screenT) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+  }
+
+  @media screen and (min-width: $screenL) {
+    padding: 32px;
+  }
+  .footer__dev {
+    margin: 0;
+    @media screen and (min-width: $screenT) {
+      text-align: left;
+      width: 218px;
+    }
+  }
+  .footer__privacy {
+    text-decoration: none;
+    color: $textG;
+    &:hover {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
+  }
+  .footer__offer {
+    margin: 0;
+    @media screen and (min-width: $screenT) {
+      text-align: right;
+      width: 213px;
+    }
+  }
+}

@@ -1,0 +1,209 @@
+.swiper-price {
+  padding-bottom: 40px;
+  border-bottom: 1px solid $shadow;
+  @media screen and (max-width: $screenT) {
+  }
+  .price__header {
+    background: $bgGradient;
+    max-width: auto;
+    background: linear-gradient(270deg, $bgW 0%, $bgG 100%);
+    .price__title {
+      font-family: $fontR;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-align: left;
+      text-transform: uppercase;
+      padding: 16px 16px;
+      color: $color_1;
+      font-weight: 600;
+      margin: 0;
+      @media screen and (min-width: $screenT) {
+        padding: 16px 24px;
+      }
+      @media screen and (min-width: $screenL) {
+        padding: 16px 32px;
+      }
+    }
+  }
+  .price {
+    width: 100%;
+    height: 100%;
+  }
+  .price-wrapper {
+    padding-left: 16px;
+    @media screen and (min-width: $screenM) {
+      width: auto;
+    }
+    @media screen and (min-width: $screenT) {
+      display: flex;
+      flex-direction: column;
+      padding: 0 24px;
+    }
+    @media screen and (min-width: $screenL) {
+      padding-right: 0;
+      padding-left: 32px;
+    }
+  }
+  .price__slide-header {
+    display: none;
+    @media screen and (min-width: $screenT) {
+      display: flex;
+      color: $textG;
+      line-height: 16px;
+      font-size: 14px;
+      padding: 16px;
+      width: auto;
+      flex-direction: row;
+      .header-span-first {
+        width: 348px;
+      }
+      .header-span-second {
+        width: 74px;
+        margin-right: 22px;
+        margin-left: auto;
+      }
+      .header-span-third {
+        width: 105px;
+        margin-right: 179px;
+        margin-left: auto;
+      }
+    }
+  }
+  .price__slide {
+    width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: $bgW;
+    border-radius: 6px;
+    padding: 16px 16px;
+    box-sizing: border-box;
+    font-family: $fontR;
+    color: $textD;
+    font-size: 14px;
+    @media screen and (min-width: $screenT) {
+      width: auto;
+      height: 64px;
+      flex-direction: row;
+    }
+    .span-first {
+      position: absolute;
+      top: 36px;
+      line-height: 18px;
+      width: 200px;
+      @media screen and (min-width: $screenT) {
+        position: static;
+        width: 348px;
+      }
+      &::before {
+        content: 'Ремонтные услуги';
+        position: absolute;
+        top: -18px;
+        color: $textG;
+        line-height: 16px;
+        @media screen and (min-width: $screenT) {
+          display: none;
+        }
+      }
+    }
+    .span-second {
+      position: absolute;
+      top: 108px;
+      line-height: 18px;
+      @media screen and (min-width: $screenT) {
+        position: static;
+        width: 74px;
+        margin-right: 22px;
+        margin-left: auto;
+      }
+      &::before {
+        content: 'Цена';
+        position: absolute;
+        top: -18px;
+        color: $textG;
+        line-height: 16px;
+        @media screen and (min-width: $screenT) {
+          display: none;
+        }
+      }
+    }
+    .span-third {
+      position: absolute;
+      top: 162px;
+      line-height: 18px;
+      @media screen and (min-width: $screenT) {
+        position: static;
+        width: 81px;
+        margin-right: 179px;
+        margin-left: auto;
+      }
+      &::before {
+        content: 'Срок';
+        position: absolute;
+        color: $textG;
+        top: -18px;
+        line-height: 16px;
+        @media screen and (min-width: $screenT) {
+          display: none;
+        }
+      }
+    }
+
+    .price__btn {
+      width: 119px;
+      height: 32px;
+      background-image: url(/src/img/order-btn.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $bgT;
+      border: none;
+      padding: 0;
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.5;
+      }
+    }
+  }
+  .price__description {
+    padding: 0 16px 16px;
+    max-width: 421px;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0;
+    @media screen and (min-width: $screenT) {
+      padding: 0 24px 16px;
+    }
+    @media screen and (min-width: $screenL) {
+      padding-left: 32px;
+    }
+  }
+  .price__description-link {
+    padding-left: 16px;
+    text-decoration: none;
+    display: inline-block;
+    color: $textD;
+    font-family: $fontR;
+    font-weight: 600;
+    line-height: 24px;
+    @media screen and (min-width: $screenT) {
+      padding-left: 24px;
+    }
+    @media screen and (min-width: $screenL) {
+      padding-left: 32px;
+    }
+    .link-img {
+      height: 24px;
+      width: 24px;
+      position: relative;
+      top: 8px;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

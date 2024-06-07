@@ -1,0 +1,122 @@
+.modal-feedback {
+  background-color: $bgW;
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  height: 100%;
+  max-width: 768px;
+  display: none;
+
+  .feedback-form {
+    max-width: 440px;
+  }
+  .feedback-form__btn-off {
+    background: url(/src/img/burger-off.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .feedback-form__h1 {
+    font-family: $fontB;
+    font-weight: 200;
+    line-height: 32px;
+    font-size: 24px;
+    color: $textD;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    width: 100%;
+
+    &::before {
+      content: '';
+      background: $hl;
+      height: 32px;
+      width: 4px;
+      position: absolute;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+      transform: translateX(-16px);
+    }
+  }
+  .feedback-form__name {
+    border: 1px solid $shadowB;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-family: $fontR;
+    width: 100%;
+    max-width: 440px;
+    box-sizing: border-box;
+    color: $textLG;
+  }
+  .feedback-form__tel {
+    border: 1px solid $shadowB;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-family: $fontR;
+    width: 100%;
+    max-width: 440px;
+    box-sizing: border-box;
+    color: $textLG;
+  }
+  .feedback-form__email {
+    border: 1px solid $shadowB;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-family: $fontR;
+    width: 100%;
+    max-width: 440px;
+    box-sizing: border-box;
+    color: $textLG;
+  }
+  .feedback-form__message {
+    border: 1px solid $shadowB;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-family: $fontR;
+    text-align: start;
+    padding-bottom: 82px;
+    width: 100%;
+    max-width: 440px;
+    box-sizing: border-box;
+    color: $textLG;
+  }
+  .feedback-form__p {
+    min-width: 288px;
+    max-width: 376px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $textG;
+    margin-top: 0;
+    margin-bottom: 19px;
+  }
+  .feedback-form__link {
+    text-decoration: none;
+    color: $textP;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .feedback-form__btn-send {
+    background: url(/src/img/send.svg) no-repeat;
+    width: 136px;
+    height: 32px;
+    border: none;
+    position: absolute;
+    right: 16px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.active {
+  display: flex;
+}

@@ -1,0 +1,28 @@
+/* Переменные стилей */
+$fontB: 'TT Lakes Bold', sans-serif;
+$fontM: 'TT Lakes Medium', sans-serif;
+$fontR: 'TT Lakes Regular', sans-serif;
+
+$bgG: rgba(248, 248, 248, 1); // Основной серый фон
+$bgW: rgba(255, 255, 255, 1); // Основной белый фон
+$bgT: transparent;
+$bgGradient: linear-gradient(
+  270deg,
+  #f8f8f8 0%,
+  #ffffff 98.61%
+); // Фон градиент
+
+$textD: rgba(27, 28, 33, 1); // Чёрный цвет текста
+$textG: rgba(126, 126, 130, 1); // Серый цвет текста
+$textLG: rgba(181, 182, 188, 1); //Плэйсхолдеры модалок
+$textP: rgba(255, 62, 121, 1); // Основной розовый
+
+$shadowB: rgba(234, 234, 234, 1); // Серая обводка
+$shadow: rgba(217, 255, 245, 1); // Голубая тень под блоками.
+$hl: rgba(65, 246, 215, 1); // Highlight у выбранных пунктов меню/модалок.
+
+/* Переменные @media */
+$screenM: 320px;
+$screenT: 768px;
+$screenL: 1120px;
+$screen: 1440px;

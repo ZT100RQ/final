@@ -1,0 +1,70 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "keywords": [
+    "web",
+    "scss",
+    "html",
+    "javascript",
+    "webpack"
+  ],
+  "license": "ISC",
+  "author": "Azat Khabirov",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --mode development --watch"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "not OperaMini All",
+    "not dead"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "7.5.5",
+    "autoprefixer": "9.6.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "8.0.6",
+    "copy-webpack-plugin": "5.1.0",
+    "css-loader": "3.2.0",
+    "eslint": "^9.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "file-loader": "4.2.0",
+    "gh-pages": "2.1.1",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "3.0.0",
+    "prettier": "3.2.5",
+    "sass-loader": "7.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "~14.18.3",
+    "npm": "~6.14.15"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZT100RQ/final"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "swiper": "^11.1.4"
+  },
+  "description": "- [Node 14.18.3](https://nodejs.org/download/release/v14.18.3/)\r - [NVM/MacOC](https://tecadmin.net/install-nvm-macos-with-homebrew/)\r - [NVM/Windows](https://github.com/coreybutler/nvm-windows/releases) Если Windows то установка только от имени администратора\r - [Yarn](https://yarnpkg.com/)"
+}
