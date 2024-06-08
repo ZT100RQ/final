@@ -1069,7 +1069,7 @@ body {
   padding-bottom: 32px;
   background: white;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
-  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: column;
   z-index: 4;
@@ -1777,9 +1777,10 @@ body {
 .modal-feedback {
   background-color: white;
   z-index: 4;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
+  left: auto;
+  right: auto;
   padding: 16px;
   height: 100%;
   max-width: 768px;
@@ -1787,10 +1788,12 @@ body {
   @media screen and (min-width: 768px) {
     .modal-feedback {
       padding: 0 32px; } }
-  @media screen and (max-width: 1120px) {
+  @media screen and (max-width: 1440px) {
     .modal-feedback {
-      right: 0;
-      left: auto; } }
+      right: 0; } }
+  @media screen and (min-width: 1440px) {
+    .modal-feedback {
+      right: auto; } }
   .modal-feedback .feedback-form {
     max-width: 440px; }
   .modal-feedback .feedback-form__btn-off {
@@ -1909,7 +1912,7 @@ body {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   top: 0;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   display: none; }
 
