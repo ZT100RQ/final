@@ -1689,7 +1689,7 @@ body {
     .swiper-price .price__slide .price__btn {
       width: 119px;
       height: 32px;
-      background-image: url(/src/img/order-btn.svg);
+      background-image: url(./static/order-btn.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-color: transparent;
@@ -1787,7 +1787,7 @@ body {
   .modal-feedback .feedback-form {
     max-width: 440px; }
   .modal-feedback .feedback-form__btn-off {
-    background: url(/src/img/burger-off.svg) no-repeat;
+    background: url(./static/burger-off.svg) no-repeat;
     width: 40px;
     height: 40px;
     border: none;
@@ -1868,7 +1868,7 @@ body {
     .modal-feedback .feedback-form__link:hover {
       text-decoration: underline; }
   .modal-feedback .feedback-form__btn-send {
-    background: url(/src/img/send.svg) no-repeat;
+    background: url(./static/send.svg) no-repeat;
     width: 136px;
     height: 32px;
     border: none;
