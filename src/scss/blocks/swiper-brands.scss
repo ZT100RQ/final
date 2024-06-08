@@ -1,9 +1,5 @@
 @import 'node_modules/swiper/modules/pagination.scss';
 
-body {
-  margin: 0 auto;
-  padding: 0;
-}
 .brands__header {
   max-width: auto;
   background: linear-gradient(270deg, $bgW 0%, $bgG 100%);
@@ -25,6 +21,10 @@ body {
   padding-left: 16px;
   width: 100%;
   height: 100%;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
 }
 .swiper-brands {
   padding-bottom: 16px;
