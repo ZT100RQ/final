@@ -1784,6 +1784,13 @@ body {
   height: 100%;
   max-width: 768px;
   display: none; }
+  @media screen and (min-width: 768px) {
+    .modal-feedback {
+      padding: 0 32px; } }
+  @media screen and (max-width: 1120px) {
+    .modal-feedback {
+      right: 0;
+      left: auto; } }
   .modal-feedback .feedback-form {
     max-width: 440px; }
   .modal-feedback .feedback-form__btn-off {
@@ -1792,6 +1799,11 @@ body {
     height: 40px;
     border: none;
     padding: 0; }
+    @media screen and (min-width: 768px) {
+      .modal-feedback .feedback-form__btn-off {
+        position: absolute;
+        left: -64px;
+        top: 32px; } }
     .modal-feedback .feedback-form__btn-off:hover {
       opacity: 0.5; }
   .modal-feedback .feedback-form__h1 {
@@ -1812,6 +1824,9 @@ body {
       border-bottom-right-radius: 20px;
       border-top-right-radius: 20px;
       transform: translateX(-16px); }
+      @media screen and (min-width: 768px) {
+        .modal-feedback .feedback-form__h1::before {
+          transform: translateX(-32px); } }
   .modal-feedback .feedback-form__name {
     border: 1px solid #eaeaea;
     padding: 12px 16px;
@@ -1819,7 +1834,7 @@ body {
     margin-bottom: 16px;
     font-family: "TT Lakes Regular", sans-serif;
     width: 100%;
-    max-width: 440px;
+    max-width: 513px;
     box-sizing: border-box;
     color: #b5b6bc; }
   .modal-feedback .feedback-form__tel {
@@ -1829,7 +1844,7 @@ body {
     margin-bottom: 16px;
     font-family: "TT Lakes Regular", sans-serif;
     width: 100%;
-    max-width: 440px;
+    max-width: 513px;
     box-sizing: border-box;
     color: #b5b6bc; }
   .modal-feedback .feedback-form__email {
@@ -1839,7 +1854,7 @@ body {
     margin-bottom: 16px;
     font-family: "TT Lakes Regular", sans-serif;
     width: 100%;
-    max-width: 440px;
+    max-width: 513px;
     box-sizing: border-box;
     color: #b5b6bc; }
   .modal-feedback .feedback-form__message {
@@ -1849,11 +1864,11 @@ body {
     margin-bottom: 16px;
     font-family: "TT Lakes Regular", sans-serif;
     text-align: start;
-    padding-bottom: 82px;
     width: 100%;
-    max-width: 440px;
+    max-width: 513px;
     box-sizing: border-box;
-    color: #b5b6bc; }
+    color: #b5b6bc;
+    resize: vertical; }
   .modal-feedback .feedback-form__p {
     min-width: 288px;
     max-width: 376px;
@@ -1873,12 +1888,21 @@ body {
     height: 32px;
     border: none;
     position: absolute;
+    padding: 0;
     right: 16px; }
+    @media screen and (min-width: 440px) {
+      .modal-feedback .feedback-form__btn-send {
+        right: 32px; } }
     .modal-feedback .feedback-form__btn-send:hover {
       opacity: 0.5; }
 
 .active {
-  display: flex; }
+  display: flex;
+  left: auto;
+  right: 0; }
+  @media screen and (min-width: 1440px) {
+    .active {
+      right: auto; } }
 
 .overlay {
   width: 100%;
