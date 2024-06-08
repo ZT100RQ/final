@@ -1,16 +1,6 @@
-$color_1: inherit;
-$color_2: rgba(126, 126, 130, 1);
-$font-family_1: 'TT Lakes Bold';
-$background-color_1: transparent;
-
-// Fonts.
-$fontBold: 'TT Lakes Bold', sans-serif;
-$fontMedium: 'TT Lakes Medium', sans-serif;
-$fontRegular: 'TT Lakes Regular', sans-serif;
-
 .icon {
   border: none;
-  background-color: $background-color_1;
+  background-color: $bgT;
   cursor: pointer;
   &:hover {
     opacity: 0.5;
@@ -55,7 +45,7 @@ $fontRegular: 'TT Lakes Regular', sans-serif;
   padding-right: 24px;
   padding-top: 18px;
   padding-bottom: 32px;
-  background: rgba(255, 255, 255, 1);
+  background: $bgW;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
   position: absolute;
   display: none;
@@ -82,28 +72,28 @@ $fontRegular: 'TT Lakes Regular', sans-serif;
 .nav__link {
   &:active {
     opacity: 0.7;
-    color: $color_2;
+    color: $textG;
     &::before {
       display: block;
     }
   }
   &:hover {
     opacity: 0.7;
-    color: $color_2;
+    color: $textG;
     &::before {
       display: block;
     }
   }
   &:focus {
     opacity: 0.7;
-    color: $color_2;
+    color: $textG;
     &::before {
       display: block;
     }
   }
   &::before {
     content: '';
-    background: rgba(65, 246, 215, 1);
+    background: $hl;
     height: 32px;
     width: 4px;
     left: auto;
@@ -119,7 +109,7 @@ $fontRegular: 'TT Lakes Regular', sans-serif;
   flex-direction: column;
 }
 .call {
-  font-family: $fontBold;
+  font-family: $fontB;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px;
@@ -147,13 +137,13 @@ $fontRegular: 'TT Lakes Regular', sans-serif;
     width: 320px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screenT) {
   .menu__nav {
     margin-top: 46px;
     margin-bottom: 268px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $screenB) {
   .menu {
     display: flex;
     z-index: 0;

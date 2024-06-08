@@ -22,7 +22,7 @@ $background-color_1: transparent;
 .title {
   margin: 0;
   padding: 0;
-  font-family: $font-family_2;
+  font-family: $fontB;
   font-size: 28px;
   line-height: 40px;
   letter-spacing: -0.6000000238418579px;
@@ -37,7 +37,7 @@ $background-color_1: transparent;
     position: absolute;
     top: 112;
     left: -1px;
-    background: rgba(65, 246, 215, 1);
+    background: $hl;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
   }
@@ -45,7 +45,7 @@ $background-color_1: transparent;
 .content__text {
   margin: 0;
   padding: 0;
-  font-family: $font-family_3;
+  font-family: $fontR;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.20000000298023224px;
@@ -66,7 +66,7 @@ $background-color_1: transparent;
 }
 .content__text-extra2 {
   display: none;
-  font-family: $fontRegular;
+  font-family: $fontR;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -87,11 +87,11 @@ $background-color_1: transparent;
 
 .nav-list__btn {
   border: none;
-  background-color: $background-color_1;
+  background-color: $bgT;
   padding: 0;
   align-items: center;
   cursor: pointer;
-  font-family: $font-family_3;
+  font-family: $fontR;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.20000000298023224px;
@@ -132,7 +132,7 @@ $background-color_1: transparent;
   display: inline-block;
   width: auto;
   height: 24px;
-  font-family: $fontRegular;
+  font-family: $fontR;
   border: 0;
   font-weight: 600;
   font-size: 16px;
@@ -157,11 +157,10 @@ $background-color_1: transparent;
   }
 }
 main {
-  background: rgba(248, 248, 248, 1);
-  background: rgba(248, 248, 248, 1);
+  background: $bgG;
 }
 body {
-  font-family: $font-family_1;
+  font-family: $fontR;
   min-width: 320px;
   max-width: 1920px;
   overflow-x: hidden;
@@ -177,7 +176,7 @@ body {
   padding-left: 16px;
 }
 .nav-list__btn--active {
-  background: rgba(255, 255, 255, 1);
+  background: $bgW;
   border: 2px solid rgba(184, 255, 236, 1);
   border-radius: 3px;
 }
@@ -194,7 +193,7 @@ body {
 .position {
   margin-left: -16px;
 }
-@media (min-width: 768px) {
+@media (min-width: $screenT) {
   .title {
     margin-left: 8px;
     margin-bottom: 32px;
@@ -218,7 +217,7 @@ body {
     margin-left: 8px;
     max-width: 36vw;
     height: auto;
-    font-family: $font-family_3;
+    font-family: $fontR;
     font-size: 14px;
     line-height: 20px;
     line-height: 143%;
@@ -246,7 +245,7 @@ body {
     padding-left: 24p;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: $screenL) {
   .section {
     padding-top: 42px;
     height: 500px;
@@ -262,7 +261,7 @@ body {
     align-items: center;
   }
   .title__button {
-    font-family: $font-family_4;
+    font-family: $fontM;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -296,7 +295,7 @@ body {
     max-height: 307px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $screenB) {
   main {
     max-width: 1120px;
     flex-shrink: 0;

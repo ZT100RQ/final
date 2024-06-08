@@ -1,15 +1,5 @@
 @import 'node_modules/swiper/modules/pagination.scss';
 
-$fontBold: 'TT Lakes Bold', sans-serif;
-$fontMedium: 'TT Lakes Medium', sans-serif;
-$fontRegular: 'TT Lakes Regular', sans-serif;
-
-$color_1: rgba(126, 126, 130, 1);
-$color_2: rgba(27, 28, 33, 1);
-
-$background-color_1: rgba(255, 255, 255, 1);
-$background-color_2: transparent;
-
 body {
   margin: 0 auto;
   padding: 0;
@@ -20,7 +10,7 @@ body {
   border-top: 1px solid $shadow;
 }
 .brands__title {
-  font-family: $fontRegular;
+  font-family: $fontR;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -49,8 +39,8 @@ body {
   width: 240px;
   height: 74px;
   display: flex;
-  border: 1px solid rgba(234, 234, 234, 1);
-  background-color: $background-color_1;
+  border: 1px solid $shadowB;
+  background-color: $bgW;
   border-radius: 6px;
   justify-content: space-between;
   padding: 0 16px;
@@ -61,11 +51,11 @@ body {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  border: 2px solid rgba(255, 62, 121, 1);
+  border: 2px solid $textP;
   background-image: url(../img/go.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $background-color_2;
+  background-color: $bgT;
   &:hover {
     transform: scale(1.1);
     opacity: 0.5;
@@ -75,12 +65,12 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 320) {
+@media screen and (min-width: $screenM) {
   .brands-wrapper {
     width: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screenT) {
   .brands-wrapper {
     display: flex;
     flex-direction: row;
@@ -92,9 +82,9 @@ body {
     display: inline-block;
     width: auto;
     height: 24px;
-    font-family: $fontRegular;
+    font-family: $fontR;
     border: 0;
-    background-color: $background-color_2;
+    background-color: $bgT;
     font-weight: 600;
     font-size: 16px;
     color: $color_2;
@@ -126,7 +116,7 @@ body {
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: $screenL) {
   .brands__slide {
     width: 240px;
   }
