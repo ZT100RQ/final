@@ -1783,7 +1783,7 @@ body {
   right: auto;
   padding: 16px;
   height: 100%;
-  max-width: 768px;
+  max-width: 376px;
   display: none; }
   @media screen and (min-width: 768px) {
     .modal-feedback {
@@ -1897,6 +1897,107 @@ body {
       .modal-feedback .feedback-form__btn-send {
         right: 32px; } }
     .modal-feedback .feedback-form__btn-send:hover {
+      opacity: 0.5; }
+
+.active {
+  display: flex;
+  left: auto;
+  right: 0; }
+  @media screen and (min-width: 1440px) {
+    .active {
+      right: auto; } }
+
+.modal-callback {
+  background-color: white;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: auto;
+  padding: 16px;
+  height: 100%;
+  max-width: 376px;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .modal-callback {
+      padding: 0 32px; } }
+  @media screen and (max-width: 1440px) {
+    .modal-callback {
+      right: 0; } }
+  @media screen and (min-width: 1440px) {
+    .modal-callback {
+      right: auto; } }
+  .modal-callback .callback-form {
+    max-width: 440px; }
+  .modal-callback .callback-form__btn-off {
+    background: url(./static/burger-off.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0; }
+    @media screen and (min-width: 768px) {
+      .modal-callback .callback-form__btn-off {
+        position: absolute;
+        left: -64px;
+        top: 32px; } }
+    .modal-callback .callback-form__btn-off:hover {
+      opacity: 0.5; }
+  .modal-callback .callback-form__h1 {
+    font-family: "TT Lakes Bold", sans-serif;
+    font-weight: 200;
+    line-height: 32px;
+    font-size: 24px;
+    color: #1b1c21;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    width: 100%; }
+    .modal-callback .callback-form__h1::before {
+      content: '';
+      background: #41f6d7;
+      height: 32px;
+      width: 4px;
+      position: absolute;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+      transform: translateX(-16px); }
+      @media screen and (min-width: 768px) {
+        .modal-callback .callback-form__h1::before {
+          transform: translateX(-32px); } }
+  .modal-callback .callback-form__tel {
+    border: 1px solid #eaeaea;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-family: "TT Lakes Regular", sans-serif;
+    width: 100%;
+    max-width: 513px;
+    box-sizing: border-box;
+    color: #b5b6bc; }
+  .modal-callback .callback-form__p {
+    min-width: 288px;
+    max-width: 376px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    margin-top: 0;
+    margin-bottom: 19px; }
+  .modal-callback .callback-form__link {
+    text-decoration: none;
+    color: #ff3e79; }
+    .modal-callback .callback-form__link:hover {
+      text-decoration: underline; }
+  .modal-callback .callback-form__btn-send {
+    background: url(./static/send.svg) no-repeat;
+    width: 136px;
+    height: 32px;
+    border: none;
+    position: absolute;
+    padding: 0;
+    right: 16px; }
+    @media screen and (min-width: 440px) {
+      .modal-callback .callback-form__btn-send {
+        right: 32px; } }
+    .modal-callback .callback-form__btn-send:hover {
       opacity: 0.5; }
 
 .active {
