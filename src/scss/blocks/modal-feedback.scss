@@ -1,9 +1,10 @@
 .modal-feedback {
   background-color: $bgW;
   z-index: 4;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
+  left: auto;
+  right: auto;
   padding: 16px;
   height: 100%;
   max-width: 768px;
@@ -11,9 +12,11 @@
   @media screen and (min-width: 768px) {
     padding: 0 32px;
   }
-  @media screen and (max-width: $screenL) {
+  @media screen and (max-width: $screenB) {
     right: 0;
-    left: auto;
+  }
+  @media screen and (min-width: $screenB) {
+    right: auto;
   }
 
   .feedback-form {
