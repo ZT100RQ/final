@@ -832,7 +832,6 @@ template {
     opacity: 0.5; }
 
 main {
-  background: #f8f8f8;
   background: #f8f8f8; }
 
 body {
@@ -1003,7 +1002,7 @@ body {
   padding-top: 18px;
   padding-bottom: 32px;
   background: white;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  box-shadow: 16px 0px 52px 0px rgba(255, 255, 255, 0.8);
   position: absolute;
   display: none;
   flex-direction: column;
@@ -1272,10 +1271,6 @@ body {
 .swiper-pagination-lock {
   display: none; }
 
-body {
-  margin: 0 auto;
-  padding: 0; }
-
 .brands__header {
   max-width: auto;
   background: linear-gradient(270deg, white 0%, #f8f8f8 100%);
@@ -1297,6 +1292,10 @@ body {
   padding-left: 16px;
   width: 100%;
   height: 100%; }
+
+body {
+  margin: 0 auto;
+  padding: 0; }
 
 .swiper-brands {
   padding-bottom: 16px; }
@@ -1335,7 +1334,7 @@ body {
 .button-showmore {
   display: none; }
 
-@media screen and (min-width: 320) {
+@media screen and (min-width: 320px) {
   .brands-wrapper {
     width: auto; } }
 
@@ -1447,7 +1446,7 @@ body {
 .electronics__btn {
   display: none; }
 
-@media screen and (min-width: 320) {
+@media screen and (min-width: 320px) {
   .electronics-wrapper {
     width: auto; } }
 
@@ -2008,7 +2007,7 @@ body {
         display: flex; } }
   .header .icon {
     border: none;
-    background-color: white;
+    background-color: transparent;
     padding: 0;
     align-items: center;
     cursor: pointer;
