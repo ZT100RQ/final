@@ -435,18 +435,30 @@
       <form class="feedback-form" action="" method="get">
         <button class="feedback-form__btn-off" type="button"></button>
         <h1 class="feedback-form__h1">Обратная связь</h1>
-        <input class="feedback-form__name" type="text" placeholder="Имя" />
-        <input class="feedback-form__tel" type="tel" placeholder="Телефон" />
+        <input
+          class="feedback-form__name"
+          type="text"
+          name="name"
+          placeholder="Имя"
+        />
+        <input
+          class="feedback-form__tel"
+          type="tel"
+          name="tel"
+          placeholder="Телефон"
+        />
         <input
           class="feedback-form__email"
           type="email"
+          name="email"
           placeholder="Электронная почта"
         />
-        <input
+        <textarea
           class="feedback-form__message"
-          type="text"
+          rows="4"
+          name="message"
           placeholder="Сообщение"
-        />
+        ></textarea>
         <p class="feedback-form__p"
           >Нажимая "отправить",вы даете согласие на
           <a href="#" class="feedback-form__link"

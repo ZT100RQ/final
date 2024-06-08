@@ -95,6 +95,7 @@ background.addEventListener('click', function () {
 
 let feedbackBtn = document.querySelectorAll('.feedback')
 let feedback = document.querySelector('.modal-feedback')
+let feedbackBtnOff = document.querySelector('.feedback-form__btn-off')
 
 feedbackBtn.forEach(function (button) {
   button.addEventListener('click', function () {
@@ -102,4 +103,9 @@ feedbackBtn.forEach(function (button) {
     background.classList.add('overlay-show')
     feedback.classList.add('active')
   })
+})
+
+feedbackBtnOff.addEventListener('click', function () {
+  background.classList.remove('overlay-show')
+  feedback.classList.remove('active')
 })
