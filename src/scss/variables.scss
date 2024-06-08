@@ -6,6 +6,7 @@ $fontR: 'TT Lakes Regular', sans-serif;
 $bgG: rgba(248, 248, 248, 1); // Основной серый фон
 $bgW: rgba(255, 255, 255, 1); // Основной белый фон
 $bgT: transparent;
+$bgI: inherit;
 $bgGradient: linear-gradient(
   270deg,
   #f8f8f8 0%,
@@ -20,6 +21,9 @@ $textP: rgba(255, 62, 121, 1); // Основной розовый
 $shadowB: rgba(234, 234, 234, 1); // Серая обводка
 $shadow: rgba(217, 255, 245, 1); // Голубая тень под блоками.
 $hl: rgba(65, 246, 215, 1); // Highlight у выбранных пунктов меню/модалок.
+$hA: rgba(184, 255, 236, 1); // Highlight active
+$overlay: rgba(255, 255, 255, 0.8); // Overlay/blur
+$boxShadow: rgba(255, 255, 255, 0.8); // Тень меню.
 
 /* Переменные @media */
 $screenM: 320px;

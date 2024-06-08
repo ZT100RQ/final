@@ -1,24 +1,3 @@
-// Fonts.
-$fontBold: 'TT Lakes Bold', sans-serif;
-$fontMedium: 'TT Lakes Medium', sans-serif;
-$fontRegular: 'TT Lakes Regular', sans-serif;
-
-// Color.
-$bgColorGrey: rgba(248, 248, 248, 1);
-$bgColorWhite: rgba(255, 255, 255, 1);
-
-$text: rgba(27, 28, 33, 1);
-$textLight: rgba(126, 126, 130, 1);
-
-$color_1: inherit;
-$color_2: rgba(27, 28, 33, 1);
-$color_3: rgba(126, 126, 130, 1);
-$font-family_1: $fontRegular;
-$font-family_2: 'TT Lakes Bold', sans-serif;
-$font-family_3: 'TT Lakes Regular', sans-serif;
-$font-family_4: 'TT Lakes Medium', sans-serif;
-$background-color_1: transparent;
-
 .title {
   margin: 0;
   padding: 0;
@@ -27,7 +6,7 @@ $background-color_1: transparent;
   line-height: 40px;
   letter-spacing: -0.6000000238418579px;
   text-align: left;
-  color: $color_2;
+  color: $textD;
   font-weight: 200;
   &::before {
     display: block;
@@ -96,7 +75,7 @@ $background-color_1: transparent;
   line-height: 24px;
   letter-spacing: -0.20000000298023224px;
   text-align: left;
-  color: $color_3;
+  color: $textG;
   white-space: nowrap;
   padding: 8px 16px;
   height: 40px;
@@ -136,7 +115,7 @@ $background-color_1: transparent;
   border: 0;
   font-weight: 600;
   font-size: 16px;
-  color: $color_2;
+  color: $textD;
   background: $bgT;
   background-image: url(../img/expand.svg);
   background-repeat: no-repeat;
@@ -144,13 +123,13 @@ $background-color_1: transparent;
   padding-left: 30px;
   margin-bottom: 16px;
   &:visited {
-    color: $color_1;
+    color: $bgI;
   }
   &:link {
-    color: $color_1;
+    color: $bgI;
   }
   &:active {
-    color: $color_1;
+    color: $bgI;
   }
   &:hover {
     opacity: 0.5;
@@ -177,7 +156,7 @@ body {
 }
 .nav-list__btn--active {
   background: $bgW;
-  border: 2px solid rgba(184, 255, 236, 1);
+  border: 2px solid $hA;
   border-radius: 3px;
 }
 .link-image {
@@ -222,7 +201,7 @@ body {
     line-height: 20px;
     line-height: 143%;
     letter-spacing: 0.01em;
-    color: $color_2;
+    color: $textD;
   }
   .conteiner-img {
     flex: 1;
@@ -266,7 +245,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.2px;
     text-align: left;
-    color: $color_2;
+    color: $textD;
     font-weight: 600;
   }
   .content__text-extra1 {

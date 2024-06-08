@@ -15,7 +15,7 @@
       text-align: left;
       text-transform: uppercase;
       padding: 16px 16px;
-      color: $color_1;
+      color: $textG;
       font-weight: 600;
       margin: 0;
       @media screen and (min-width: $screenT) {
@@ -75,7 +75,7 @@
     height: 200px;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(234, 234, 234, 1);
+    border: 1px solid $shadowB;
     background-color: $bgW;
     border-radius: 6px;
     padding: 16px 16px;

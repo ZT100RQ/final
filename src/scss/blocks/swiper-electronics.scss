@@ -7,14 +7,14 @@
   border-top: 1px solid $shadow;
 }
 .electronics__title {
-  font-family: $fontRegular;
+  font-family: $fontR;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   text-align: left;
   text-transform: uppercase;
   padding: 16px 16px;
-  color: $color_1;
+  color: $textG;
   font-weight: 600;
   margin: 0;
 }
@@ -60,12 +60,12 @@
 .electronics__btn {
   display: none;
 }
-@media screen and (min-width: 320) {
+@media screen and (min-width: $screenM) {
   .electronics-wrapper {
     width: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screenT) {
   .electronics-wrapper {
     display: flex;
     flex-direction: row;
@@ -82,7 +82,7 @@
     background-color: $bgT;
     font-weight: 600;
     font-size: 16px;
-    color: $color_2;
+    color: $textD;
     background-image: url(../img/expand.svg);
     background-repeat: no-repeat;
     margin-left: 16px;
@@ -112,7 +112,7 @@
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: $screenL) {
   .electronics__slide {
     width: 240px;
   }
