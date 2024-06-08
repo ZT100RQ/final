@@ -3,7 +3,7 @@
 @import 'node_modules/swiper/modules/pagination.scss';
 @import '../scss/fonts.scss';
 @import '../scss/variables.scss';
-@import '../scss/blocks/header.scss';
+@import '../scss/blocks/main-section.scss';
 @import '../scss/blocks/menu.scss';
 @import '../scss/blocks/swiper-brands.scss';
 @import '../scss/blocks/swiper-electronics.scss';
@@ -11,34 +11,4 @@
 @import '../scss/blocks/footer-main.scss';
 @import '../scss/blocks/modal-feedback.scss';
 @import '../scss/blocks/modal-callback.scss';
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  top: 0;
-  position: fixed;
-  z-index: 3;
-  display: none;
-}
-
-.overlay-show {
-  display: flex;
-}
-
-.swiper-pagination {
-  position: relative;
-}
-
-@media screen and (min-width: 1440px) {
-  main {
-    max-width: 1120px;
-    flex-shrink: 0;
-  }
-  body {
-    width: 1440px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 0 auto;
-  }
-}
+@import '../scss/blocks/header.scss';

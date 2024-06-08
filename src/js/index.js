@@ -129,3 +129,19 @@ callbackBtnOff.addEventListener('click', function () {
   background.classList.remove('overlay-show')
   callback.classList.remove('active')
 })
+
+/* Читать далее */
+
+let conteinerText = document.querySelector('.content__text-extra2')
+let conteinerBtn = document.querySelector('.content__link')
+let conteinerBtnExpand = document.querySelector('.link-image')
+
+conteinerBtn.addEventListener('click', function () {
+  if (conteinerBtn.innerHTML !== 'Скрыть') {
+    conteinerBtn.innerHTML = 'Скрыть'
+    conteinerText.classList.add('content__text--show')
+  } else {
+    conteinerBtn.innerHTML = 'Читать далее'
+    conteinerText.classList.remove('content__text--show')
+  }
+})
