@@ -89,9 +89,10 @@ background.addEventListener('click', function () {
   menu.classList.remove('menu-toggle')
   background.classList.remove('overlay-show')
   feedback.classList.remove('active')
+  callback.classList.remove('active')
 })
 
-/* Обработчик кнопки "обратная связь" */
+/* Обработчик кнопки "Обратная связь" */
 
 let feedbackBtn = document.querySelectorAll('.feedback')
 let feedback = document.querySelector('.modal-feedback')
@@ -108,4 +109,23 @@ feedbackBtn.forEach(function (button) {
 feedbackBtnOff.addEventListener('click', function () {
   background.classList.remove('overlay-show')
   feedback.classList.remove('active')
+})
+
+/* Обработчик кнопки "Заказать звонок" */
+
+let callbackBtn = document.querySelectorAll('.callback')
+let callback = document.querySelector('.modal-callback')
+let callbackBtnOff = document.querySelector('.callback-form__btn-off')
+
+callbackBtn.forEach(function (button) {
+  button.addEventListener('click', function () {
+    menu.classList.remove('menu-toggle')
+    background.classList.add('overlay-show')
+    callback.classList.add('active')
+  })
+})
+
+callbackBtnOff.addEventListener('click', function () {
+  background.classList.remove('overlay-show')
+  callback.classList.remove('active')
 })

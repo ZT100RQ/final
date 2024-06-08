@@ -21,7 +21,7 @@
       </div>
       <ul class="header__right-list">
         <li class="header__items">
-          <button class="phone icon" type="button">
+          <button class="phone icon callback" type="button">
             <img src="img/call.svg" alt="Позвонить" />
           </button>
         </li>
@@ -397,7 +397,7 @@
       <footer class="footer">
         <ul class="footer__list">
           <li class="footer__item">
-            <button class="icon call1" id="call">
+            <button type="button" class="icon callback" id="call">
               <img src="img/call.svg" alt="Звонок" />
             </button>
           </li>
@@ -473,7 +473,29 @@
       </form>
     </aside>
 
-    <aside class="modal-call"> </aside>
+    <aside class="modal-callback">
+      <form class="callback-form" action="" method="get">
+        <button class="callback-form__btn-off" type="button"></button>
+        <h1 class="callback-form__h1">Заказать звонок</h1>
+        <input
+          class="callback-form__tel"
+          type="tel"
+          name="tel"
+          placeholder="Телефон"
+        />
+        <p class="callback-form__p"
+          >Нажимая "отправить",вы даете согласие на
+          <a href="#" class="callback-form__link"
+            >обработку персональных данных</a
+          >
+          и соглашаетесь с нашей
+          <a href="#" class="callback-form__link"
+            >политикой конфиденциальности</a
+          ></p
+        >
+        <button class="callback-form__btn-send" type="submit"></button>
+      </form>
+    </aside>
 
     <div class="overlay"></div>
   </body>
