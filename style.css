@@ -1017,7 +1017,7 @@ body {
   padding-bottom: 32px;
   background: white;
   box-shadow: 16px 0px 52px 0px rgba(255, 255, 255, 0.8);
-  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: column;
   z-index: 4;
