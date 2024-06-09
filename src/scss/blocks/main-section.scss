@@ -66,7 +66,7 @@
 }
 
 .nav-list__btn {
-  border: none;
+  border: 0;
   background-color: $bgT;
   padding: 0;
   align-items: center;
@@ -78,11 +78,27 @@
   text-align: left;
   color: $textG;
   white-space: nowrap;
-  padding: 8px 16px;
+  padding: 0 16px;
   height: 40px;
+  box-sizing: border-box;
   &:hover {
     opacity: 0.5;
+    background: $bgW;
+    // border: 2px solid $hA;
+    border-radius: 6px;
+    box-shadow: $hA 0px 0px 0px 2px;
   }
+  &:focus-visible {
+    opacity: 0.5;
+    background: $bgW;
+    border: 2px solid $hA;
+    border-radius: 6px;
+  }
+}
+.nav-list__btn--active {
+  background: $bgW;
+  border: 2px solid $hA;
+  border-radius: 6px;
 }
 .title__button {
   padding: 8px 16px;
@@ -92,7 +108,7 @@
 }
 .main__nav-list {
   margin: 0;
-  padding: 0;
+  padding: 3px;
   list-style: none;
   display: flex;
   overflow-x: auto;
@@ -179,7 +195,6 @@ body {
     margin-bottom: 32px;
   }
   .main__nav-list {
-    margin-left: 8px;
     margin-bottom: 32px;
   }
   .content__text {
