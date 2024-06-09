@@ -754,7 +754,8 @@ template {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
-  text-align: left; }
+  text-align: left;
+  padding-right: 16px; }
 
 .content__text--show {
   display: flex;
