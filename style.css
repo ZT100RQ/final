@@ -1094,7 +1094,7 @@ body {
 
 @media screen and (min-width: 370px) {
   .menu {
-    width: 320px; } }
+    max-width: 376px; } }
 
 @media screen and (min-width: 768px) {
   .menu__nav {
