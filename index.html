@@ -60,7 +60,7 @@
         <nav class="main__nav">
           <ul class="main__nav-list nav-list">
             <li class="nav-list__item">
-              <button type="button" class="nav-list__btn nav-list__btn--active">Ремонтируемые устройства</button>
+              <button type="button" class="nav-list__btn" onclick="window.location.href='#brands'">Ремонтируемые устройства</button>
             </li>
             <li class="nav-list__item">
               <button type="button" class="nav-list__btn">Ремонтируемые устройства</button>
@@ -69,7 +69,7 @@
               <button type="button" class="nav-list__btn">Дополнительные услуги</button>
             </li>
             <li class="nav-list__item">
-              <button type="button" class="nav-list__btn">Цены на услуги</button>
+              <button type="button" class="nav-list__btn" onclick="window.location.href='#prices'">Цены на услуги</button>
             </li>
             <li class="nav-list__item">
               <button type="button" class="nav-list__btn">Адреса сервисных центров</button>
@@ -101,7 +101,7 @@
         </section>
       </section>
       
-      <section class="swiper-brands">
+      <section class="swiper-brands" id="brands">
         <header class="brands__header"><h1 class="brands__title">Ремонт техники различных брендов</h1></header>
         <div class="swiper-content">
           <section class="swiper brands">
@@ -142,7 +142,7 @@
         <button class="electronics__btn">Показать все</button>
       </section>
       
-      <section class="swiper-price">
+      <section class="swiper-price" id="prices">
         <header class="price__header"><h1 class="price__title">Цены на услуги</h1></header>
         <div class="swiper price">
           <ul class="swiper-wrapper price-wrapper">

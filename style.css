@@ -769,7 +769,7 @@ template {
     transition: 0.2s ease-in-out; }
 
 .nav-list__btn {
-  border: none;
+  border: 0;
   background-color: transparent;
   padding: 0;
   align-items: center;
@@ -781,10 +781,24 @@ template {
   text-align: left;
   color: #7e7e82;
   white-space: nowrap;
-  padding: 8px 16px;
-  height: 40px; }
+  padding: 0 16px;
+  height: 40px;
+  box-sizing: border-box; }
   .nav-list__btn:hover {
-    opacity: 0.5; }
+    opacity: 0.5;
+    background: white;
+    border-radius: 6px;
+    box-shadow: #b8ffec 0px 0px 0px 2px; }
+  .nav-list__btn:focus-visible {
+    opacity: 0.5;
+    background: white;
+    border: 2px solid #b8ffec;
+    border-radius: 6px; }
+
+.nav-list__btn--active {
+  background: white;
+  border: 2px solid #b8ffec;
+  border-radius: 6px; }
 
 .title__button {
   padding: 8px 16px;
@@ -794,7 +808,7 @@ template {
 
 .main__nav-list {
   margin: 0;
-  padding: 0;
+  padding: 3px;
   list-style: none;
   display: flex;
   overflow-x: auto;
@@ -873,7 +887,6 @@ body {
     margin-left: 8px;
     margin-bottom: 32px; }
   .main__nav-list {
-    margin-left: 8px;
     margin-bottom: 32px; }
   .content__text {
     display: flex;
