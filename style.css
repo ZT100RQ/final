@@ -787,8 +787,8 @@ template {
   .nav-list__btn:hover {
     opacity: 0.5;
     background: white;
-    border-radius: 6px;
-    box-shadow: #b8ffec 0px 0px 0px 2px; }
+    border: 2px solid #b8ffec;
+    border-radius: 6px; }
   .nav-list__btn:focus-visible {
     opacity: 0.5;
     background: white;
@@ -836,7 +836,8 @@ template {
   background-repeat: no-repeat;
   text-align: end;
   padding-left: 30px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  cursor: pointer; }
   .content__link:visited {
     color: inherit; }
   .content__link:link {
@@ -845,6 +846,10 @@ template {
     color: inherit; }
   .content__link:hover {
     opacity: 0.5; }
+
+.content__link--hidden {
+  background-image: url(./static/expand-back.svg);
+  background-repeat: no-repeat; }
 
 main {
   background: #f8f8f8; }
@@ -863,11 +868,6 @@ body {
   position: relative;
   padding-top: 24px;
   padding-left: 16px; }
-
-.nav-list__btn--active {
-  background: white;
-  border: 2px solid #b8ffec;
-  border-radius: 3px; }
 
 .link-image {
   margin-right: 8px; }
@@ -1070,6 +1070,8 @@ body {
 .footer__address {
   display: flex;
   flex-direction: column; }
+  .footer__address:hover {
+    opacity: 0.5; }
 
 .call {
   font-family: "TT Lakes Bold", sans-serif;
@@ -1078,7 +1080,10 @@ body {
   letter-spacing: -0.6px;
   text-align: left;
   margin-top: 12px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  cursor: pointer; }
+  .call:hover {
+    opacity: 0.5; }
 
 .mail {
   margin-top: 16px; }
@@ -1340,7 +1345,8 @@ body {
   background-image: url(./static/go.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
   .button-link:hover {
     transform: scale(1.1);
     opacity: 0.5; }
@@ -1374,7 +1380,8 @@ body {
     margin-left: 16px;
     margin-top: 20px;
     text-align: end;
-    padding-left: 30px; }
+    padding-left: 30px;
+    cursor: pointer; }
     .button-showmore:hover {
       opacity: 0.5; }
   .brands__title {
@@ -1452,7 +1459,8 @@ body {
   background-color: transparent;
   position: absolute;
   right: 16px;
-  bottom: 16px; }
+  bottom: 16px;
+  cursor: pointer; }
   .btn-link:hover {
     transform: scale(1.1);
     opacity: 0.5; }
@@ -1487,7 +1495,8 @@ body {
     margin-top: 20px;
     text-align: end;
     padding-left: 30px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    cursor: pointer; }
     .electronics__btn:hover {
       opacity: 0.5; }
   .electronics__title {
@@ -1660,7 +1669,8 @@ body {
       padding: 0;
       position: absolute;
       right: 16px;
-      bottom: 16px; }
+      bottom: 16px;
+      cursor: pointer; }
       .swiper-price .price__slide .price__btn:hover {
         transform: scale(1.1);
         opacity: 0.5; }
@@ -1765,7 +1775,8 @@ body {
     width: 40px;
     height: 40px;
     border: none;
-    padding: 0; }
+    padding: 0;
+    cursor: pointer; }
     @media screen and (min-width: 768px) {
       .modal-feedback .feedback-form__btn-off {
         position: absolute;
@@ -1856,7 +1867,8 @@ body {
     border: none;
     position: absolute;
     padding: 0;
-    right: 16px; }
+    right: 16px;
+    cursor: pointer; }
     @media screen and (min-width: 440px) {
       .modal-feedback .feedback-form__btn-send {
         right: 32px; } }
@@ -1899,7 +1911,8 @@ body {
     width: 40px;
     height: 40px;
     border: none;
-    padding: 0; }
+    padding: 0;
+    cursor: pointer; }
     @media screen and (min-width: 768px) {
       .modal-callback .callback-form__btn-off {
         position: absolute;
@@ -1958,7 +1971,8 @@ body {
     border: none;
     position: absolute;
     padding: 0;
-    right: 16px; }
+    right: 16px;
+    cursor: pointer; }
     @media screen and (min-width: 440px) {
       .modal-callback .callback-form__btn-send {
         right: 32px; } }
