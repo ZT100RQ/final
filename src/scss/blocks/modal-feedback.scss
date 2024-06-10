@@ -29,6 +29,7 @@
     height: 40px;
     border: none;
     padding: 0;
+    cursor: pointer;
     @media screen and (min-width: $screenT) {
       position: absolute;
       left: -64px;
@@ -132,6 +133,7 @@
     position: absolute;
     padding: 0;
     right: 16px;
+    cursor: pointer;
     @media screen and (min-width: 440px) {
       right: 32px;
     }

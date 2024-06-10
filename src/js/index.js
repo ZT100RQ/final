@@ -25,6 +25,33 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 24
     },
 
+    800: {
+      enabled: false,
+      spaceBetween: 34
+    },
+
+    840: {
+      enabled: false,
+      spaceBetween: 44
+    },
+    860: {
+      enabled: false,
+      spaceBetween: 54
+    },
+
+    900: {
+      enabled: false,
+      spaceBetween: 64
+    },
+    940: {
+      enabled: false,
+      spaceBetween: 70
+    },
+    960: {
+      enabled: false,
+      spaceBetween: 24
+    },
+
     1120: {
       spaceBetween: 32,
       enabled: false
@@ -140,8 +167,10 @@ conteinerBtn.addEventListener('click', function () {
   if (conteinerBtn.innerHTML !== 'Скрыть') {
     conteinerBtn.innerHTML = 'Скрыть'
     conteinerText.classList.add('content__text--show')
+    conteinerBtn.classList.add('content__link--hidden')
   } else {
     conteinerBtn.innerHTML = 'Читать далее'
     conteinerText.classList.remove('content__text--show')
+    conteinerBtn.classList.remove('content__link--hidden')
   }
 })

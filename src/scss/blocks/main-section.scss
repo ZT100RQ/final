@@ -84,9 +84,8 @@
   &:hover {
     opacity: 0.5;
     background: $bgW;
-    // border: 2px solid $hA;
+    border: 2px solid $hA;
     border-radius: 6px;
-    box-shadow: $hA 0px 0px 0px 2px;
   }
   &:focus-visible {
     opacity: 0.5;
@@ -139,6 +138,7 @@
   text-align: end;
   padding-left: 30px;
   margin-bottom: 16px;
+  cursor: pointer;
   &:visited {
     color: $bgI;
   }
@@ -151,6 +151,10 @@
   &:hover {
     opacity: 0.5;
   }
+}
+.content__link--hidden {
+  background-image: url(../img/expand-back.svg);
+  background-repeat: no-repeat;
 }
 main {
   background: $bgG;
@@ -171,11 +175,7 @@ body {
   padding-top: 24px;
   padding-left: 16px;
 }
-.nav-list__btn--active {
-  background: $bgW;
-  border: 2px solid $hA;
-  border-radius: 3px;
-}
+
 .link-image {
   margin-right: 8px;
 }

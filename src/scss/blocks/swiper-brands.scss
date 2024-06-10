@@ -56,6 +56,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: $bgT;
+  cursor: pointer;
   &:hover {
     transform: scale(1.1);
     opacity: 0.5;
@@ -94,6 +95,7 @@ body {
     margin-top: 20px;
     text-align: end;
     padding-left: 30px;
+    cursor: pointer;
     &:hover {
       opacity: 0.5;
     }

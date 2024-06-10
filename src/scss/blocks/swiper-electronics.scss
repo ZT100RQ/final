@@ -50,6 +50,7 @@
   position: absolute;
   right: 16px;
   bottom: 16px;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
@@ -90,6 +91,7 @@
     text-align: end;
     padding-left: 30px;
     margin-bottom: 16px;
+    cursor: pointer;
     &:hover {
       opacity: 0.5;
     }

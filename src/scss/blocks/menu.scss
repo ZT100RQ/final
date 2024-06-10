@@ -47,7 +47,7 @@
   padding-bottom: 32px;
   background: $bgW;
   box-shadow: 16px 0px 52px 0px $boxShadow;
-  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: column;
   z-index: 4;
@@ -107,6 +107,9 @@
 .footer__address {
   display: flex;
   flex-direction: column;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 .call {
   font-family: $fontB;
@@ -116,6 +119,10 @@
   text-align: left;
   margin-top: 12px;
   margin-bottom: 40px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 .mail {
   margin-top: 16px;
